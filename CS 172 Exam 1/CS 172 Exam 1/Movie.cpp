@@ -1,8 +1,14 @@
-#ifndef MOVIE_H
-#define MOVIE_H
 #include"Movie.h"
-using namespace std;
 
+Movie::Movie(){
+	title = "The Longest Yard";
+	genre = "Comedy";
+}
+Movie::Movie(string new_title, string new_genre, int new_showtime){
+	new_title = title;
+	new_genre = genre;
+	new_showtime = showtime;
+}
 string Movie::GetTitle(string title){
 	return title;
 }
@@ -12,4 +18,3 @@ string Movie::GetGenre(string genre){
 int Movie::GetShowtime(int showtime){
 	return showtime;
 }
-#endif

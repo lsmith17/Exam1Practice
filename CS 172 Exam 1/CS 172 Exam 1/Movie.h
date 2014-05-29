@@ -1,3 +1,5 @@
+#ifndef MOVIE_H
+#define MOVIE_H
 #include<string>
 using namespace std;
 
@@ -8,8 +10,6 @@ private:
 	int showtime;
 public:
 	Movie(){
-		title = "The Longest Yard";
-		genre = "Comedy";
 	}
 	Movie(string title, string genre, int showtime){
 
@@ -18,3 +18,4 @@ public:
 	string GetGenre();
 	int GetShowtime();
 };
+#endif
